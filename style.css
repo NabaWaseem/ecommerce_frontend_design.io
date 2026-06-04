@@ -447,11 +447,11 @@ select{
 
 /* BACKGROUND IMAGES */
 .banner1{
-    background-image:url("/assets/assets/Image/backgrounds/Group 969.png");
+    background-image:url("./assets/Image/backgrounds/Group 969.png");
 }
 
 .banner2{
-    background-image:url("/assets/assets/Image/backgrounds/image 98.png");
+    background-image:url("./assets/Image/backgrounds/image 98.png");
 }
 
 /* BANNER CONTENT */
@@ -528,7 +528,7 @@ select{
         rgba(0,119,255,0.35),
         rgba(0,119,255,0.25)
     ),
-    url("/assets/assets/Image/backgrounds/Group\ 982.png");
+    url("./assets/Image/backgrounds/Group\ 982.png");
 
     background-size:cover;
     background-position:center;
