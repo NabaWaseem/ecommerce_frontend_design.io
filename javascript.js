@@ -4,55 +4,55 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       code: "AE",
       name: "UAE",
-      flag: "./assets/assets/Layout1/Image/flags/AE@2x.png"
+      flag: "./assets/Layout1/Image/flags/AE@2x.png"
     },
 
     {
       code: "CN",
       name: "China",
-      flag: "./assets/assets/Layout1/Image/flags/CN@2x.png"
+      flag: "./assets/Layout1/Image/flags/CN@2x.png"
     },
 
     {
       code: "DE",
       name: "Germany",
-      flag: "./assets/assets/Layout1/Image/flags/DE@2x.png"
+      flag: "./assets/Layout1/Image/flags/DE@2x.png"
     },
 
     {
       code: "DK",
       name: "Denmark",
-      flag: "./assets/assets/Layout1/Image/flags/DK@2x.png"
+      flag: "./assets/Layout1/Image/flags/DK@2x.png"
     },
 
     {
       code: "FR",
       name: "France",
-      flag: "./assets/assets/Layout1/Image/flags/FR@2x.png"
+      flag: "./assets/Layout1/Image/flags/FR@2x.png"
     },
 
     {
       code: "GB",
       name: "UK",
-      flag: "./assets/assets/Layout1/Image/flags/GB@2x.png"
+      flag: "./assets/Layout1/Image/flags/GB@2x.png"
     },
 
     {
       code: "IT",
       name: "Italy",
-      flag: "./assets/assets/Layout1/Image/flags/IT@2x.png"
+      flag: "./assets/Layout1/Image/flags/IT@2x.png"
     },
 
     {
       code: "RU",
       name: "Russia",
-      flag: "./assets/assets/Layout1/Image/flags/RU@2x.png"
+      flag: "./assets/Layout1/Image/flags/RU@2x.png"
     },
 
     {
       code: "US",
       name: "USA",
-      flag: "./assets/assets/Layout1/Image/flags/US@2x.png"
+      flag: "./assets/Layout1/Image/flags/US@2x.png"
     }
   ];
 
