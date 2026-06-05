@@ -282,103 +282,106 @@ updateSlider();
 <!-- =========================
      NAVBAR START
 ========================= -->
-<nav class="navbar">
+    <nav class="navbar">
 
-  <!-- TOP NAV -->
-  <div class="top-nav">
+        <!-- TOP NAV -->
+        <div class="top-nav">
 
-    <!-- LOGO -->
-    <div class="logo">
-      <img src="./assets/Layout/Brand/logo-colored.png" alt="">
-    </div>
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="./assets/Layout/Brand/logo-colored.png" alt="">
+            </div>
 
-    <!-- SEARCH -->
-    <div class="search-box">
-      <input type="text" placeholder="Search">
+            <!-- SEARCH -->
+            <div class="search-box">
+                <input type="text" placeholder="Search">
 
-      <select>
-        <option>All category</option>
-        <option>Electronics</option>
-        <option>Fashion</option>
-      </select>
+                <select>
+                    <option>All category</option>
+                    <option>Electronics</option>
+                    <option>Fashion</option>
+                </select>
 
-      <button>Search</button>
-    </div>
+                <button>Search</button>
+            </div>
 
-    <!-- ICONS -->
-    <div class="nav-icons">
+            <div class="nav-icons">
 
-        <div class="icon-item">
-          <img src="./assets/nav/prof.jfif" alt="">
-          <span>Profile</span>
-        </div>
+                <div class="icon-item">
+                    <img src="./assets/nav/prof.jfif" alt="">
+                    <span>Profile</span>
+                </div>
 
-        <div class="icon-item">
-          <img src="./assets/nav/mess.png" alt="">
-          <span>Message</span>
-        </div>
+                <div class="icon-item">
+                    <img src="./assets/nav/mess.png" alt="">
+                    <span>Message</span>
+                </div>
 
-        <div class="icon-item">
-          <img src="./assets/nav/order.jfif" alt="">
-          <span>Orders</span>
-        </div>
+                <div class="icon-item">
+                    <img src="./assets/nav/order.jfif" alt="">
+                    <span>Orders</span>
+                </div>
 
-        <div class="icon-item">
-          <img src="./assets/nav/cart.png" alt="">
-          <span>My cart</span>
-        </div>
+                <div class="icon-item">
+                    <img src="./assets/nav/cart.png" alt="">
+                    <span>My cart</span>
+                </div>
 
-      </div>
-
-  </div>
-
-  <!-- BOTTOM NAV -->
-  <div class="bottom-nav">
-
-    <div class="menu-left">
-
-      <select>
-        <option>☰ All category</option>
-      </select>
-
-      <a href="#">Hot offers</a>
-      <a href="#">Gift boxes</a>
-      <a href="#">Projects</a>
-      <a href="#">Menu item</a>
-      <a href="#">Help</a>
-
-    </div>
-
-    <div class="menu-right">
-
-      <!-- LANGUAGE -->
-      <select class="lang">
-        <option>English</option>
-        <option>Urdu</option>
-      </select>
-
-      <!-- COUNTRY -->
-      <div class="country-selector-bar">
-
-        <span class="ship-label">Ship to:</span>
-
-        <div class="dropdown-btn">
-
-          <img src="./assets/Layout1/Image/flags/US@2x.png">
-
-          <span>USA</span>
-
-          <span class="dropdown-arrow">▼</span>
+            </div>
 
         </div>
 
-      </div>
+        <!-- BOTTOM NAV -->
+        <div class="bottom-nav">
 
-    </div>
+            <div class="menu-left">
 
-  </div>
+                <select>
+                    <option>☰ All category</option>
+                </select>
 
-</nav>
+                <a href="#">Hot offers</a>
+                <a href="#">Gift boxes</a>
+                <a href="#">Projects</a>
+                <a href="#">Menu item</a>
+                <a href="#">Help</a>
+
+            </div>
+
+            <div class="menu-right">
+
+                <!-- LANGUAGE -->
+                <select class="lang">
+                    <option>English</option>
+                    <option>Urdu</option>
+                </select>
+
+                <!-- COUNTRY -->
+                <div class="country-selector-bar">
+
+                    <span class="ship-label">Ship to:</span>
+
+                    <div class="dropdown-btn" id="dropdownBtn">
+
+                        <img id="selectedFlag" src="./assets/Layout1/Image/flags/US@2x.png" alt="USA">
+
+                        <span id="selectedCountry">USA</span>
+
+                        <span class="dropdown-arrow">▼</span>
+
+                    </div>
+
+                    <div class="dropdown-menu" id="dropdownMenu"></div>
+
+                    <input type="hidden" id="selectedCountryCode" value="US">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
 <!-- =========================
      NAVBAR END
 ========================= -->
