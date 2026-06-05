@@ -1,108 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Select Page</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-        body{
-            height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            background:linear-gradient(135deg,#0f4c81,#1e88e5,#ffffff);
-            overflow:hidden;
-        }
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f4c81,#1e88e5,#ffffff);
+    overflow:hidden;
+}
 
-        .container{
-            text-align:center;
-            background:rgba(255,255,255,0.15);
-            backdrop-filter:blur(15px);
-            padding:60px;
-            border-radius:30px;
-            box-shadow:
-                0 15px 35px rgba(0,0,0,0.25),
-                0 5px 15px rgba(255,255,255,0.2);
-        }
+.container{
+    text-align:center;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    padding:60px;
+    border-radius:30px;
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.25),
+        0 5px 15px rgba(255,255,255,0.2);
+}
 
-        h1{
-            color:white;
-            font-size:3rem;
-            margin-bottom:20px;
-            text-shadow:2px 2px 10px rgba(0,0,0,0.3);
-        }
+h1{
+    color:white;
+    font-size:3rem;
+    margin-bottom:20px;
+    text-shadow:2px 2px 10px rgba(0,0,0,0.3);
+}
 
-        p{
-            color:white;
-            font-size:1.2rem;
-            margin-bottom:40px;
-        }
+p{
+    color:white;
+    font-size:1.2rem;
+    margin-bottom:40px;
+}
 
-        .btn-container{
-            display:flex;
-            gap:30px;
-            justify-content:center;
-            flex-wrap:wrap;
-        }
+/* BUTTON GRID */
+.btn-container{
+    display:grid;
+    grid-template-columns: repeat(2, 280px);
+    gap:25px;
+    justify-content:center;
+}
 
-        .btn{
-            width:280px;
-            height:90px;
-            border:none;
-            border-radius:20px;
-            font-size:1.5rem;
-            font-weight:bold;
-            cursor:pointer;
-            transition:all 0.3s ease;
-            box-shadow:0 10px 25px rgba(0,0,0,0.25);
-        }
+.btn{
+    height:90px;
+    border:none;
+    border-radius:20px;
+    font-size:1.3rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:all 0.3s ease;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
 
-        .btn1{
-            background:white;
-            color:#1565c0;
-        }
+/* BUTTON COLORS */
+.btn1{ background:rgb(198, 6, 73); color:white; }
+.btn2{ background:#1565c0; color:white; }
+.btn3{ background:#ff9800; color:white; }
+.btn4{ background:#2e7d32; color:white; }
 
-        .btn2{
-            background:#1565c0;
-            color:white;
-        }
+.btn:hover{
+    transform:translateY(-8px) scale(1.05);
+    box-shadow:0 18px 35px rgba(0,0,0,0.35);
+}
 
-        .btn:hover{
-            transform:translateY(-8px) scale(1.05);
-            box-shadow:0 18px 35px rgba(0,0,0,0.35);
-        }
+.btn:active{
+    transform:scale(0.98);
+}
 
-        .btn:active{
-            transform:scale(0.98);
-        }
-    </style>
+/* MOBILE RESPONSIVE */
+@media (max-width: 650px){
+    .btn-container{
+        grid-template-columns: 1fr;
+    }
+}
+</style>
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>1st and 2nd Week task</h1>
-        <p>Select the page you want to visit</p>
+<div class="container">
+    <h1>Ecommerce Website All 3 Tasks</h1>
+    <p>Select the page you want to visit</p>
 
-        <div class="btn-container">
-            <button class="btn btn1"
-                onclick="window.location.href='homepage.html'">
-                Home Page
-            </button>
+    <div class="btn-container">
 
-            <button class="btn btn2"
-                onclick="window.location.href='weblist view.html'">
-                Product listing page
-            </button>
-        </div>
+        <button class="btn btn1"
+            onclick="window.location.href='homepage.html'">
+            Home Page
+        </button>
+
+        <button class="btn btn2"
+            onclick="window.location.href='weblist view.html'">
+            Product List View
+        </button>
+
+        <button class="btn btn3"
+            onclick="window.location.href='product detail page.html'">
+            Product Detail Page
+        </button>
+
+        <button class="btn btn4"
+            onclick="window.location.href='weblist grid view.html'">
+            Grid View Page
+        </button>
+
     </div>
+</div>
 
 </body>
 </html>
